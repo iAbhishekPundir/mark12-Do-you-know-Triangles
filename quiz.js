@@ -12,8 +12,7 @@ const correctAnswers = [
     "Isosceles",
     "70°",
     "1",
-    "60°",
-    "Acute",
+    "Acute"
 ]
 
 btnSubmit.addEventListener("click", finalScore);
