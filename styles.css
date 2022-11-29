@@ -60,6 +60,11 @@ button {
     cursor: pointer;
     margin-top: 1rem;
 }
+button:hover{
+    background-color: #1e293b;
+    color: white;
+    border-radius: 0.5rem;
+}
 .link:hover{
     background-color: #1e293b;
     color: white;
