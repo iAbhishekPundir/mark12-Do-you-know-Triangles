@@ -14,7 +14,6 @@ function isTriangle() {
     {
         
         outputText.innerText = "Enter all the Angle's value";
-        console.log(typeof(inputBox[0].value));
     } 
     else if (inputBox[0].value <= 0 || inputBox[1].value <= 0 ||  inputBox[2].value <= 0 )
     {
