@@ -10,16 +10,18 @@ function isTriangle() {
         Number(inputBox[1].value),
         Number(inputBox[2].value)
     );
-    if (inputBox[0].value == "") {
-        outputText.innerText = "Enter Angle 1";
-    } else 
-    if (inputBox[1].value == "") {
-        outputText.innerText = "Enter Angle 2";
-    } else 
-    if (inputBox[2].value == "") {
-        outputText.innerText = "Enter Angle 3";
-    } else
-        if (sum === 180) {
+    if (inputBox[0].value == "" || inputBox[1].value == "" ||  inputBox[2].value == "" ) 
+    {
+        
+        outputText.innerText = "Enter all the Angle's value";
+        console.log(typeof(inputBox[0].value));
+    } 
+    else if (inputBox[0].value <= 0 || inputBox[1].value <= 0 ||  inputBox[2].value <= 0 )
+    {
+        outputText.innerText = "All the angles values must be greater than 0";
+    }
+
+     else if (sum === 180) {
             outputText.innerText = "These angles can form a triangle.";
         } else {
             outputText.innerText = "These angles cannot form a triangle.";
