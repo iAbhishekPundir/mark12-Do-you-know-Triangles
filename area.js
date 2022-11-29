@@ -7,8 +7,8 @@ calculateBtn.addEventListener("click", calculateArea);
 function calculateArea() {
     const base = Number(inputs[0].value);
     const height = Number(inputs[1].value);
-    if (base == "" || base <0 || height == "" || height <0) {
-        outputEl.innerText = "Fill all the field's value and must be > 0"
+    if (base == "" || base <=0 || height == "" || height <=0) {
+        outputEl.innerText = "Fill all the field's value and values must be > 0"
     } 
     else {
     const area = 0.5 * base * height;
