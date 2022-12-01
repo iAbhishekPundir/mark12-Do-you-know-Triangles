@@ -19,6 +19,6 @@ function calculateHypotenuse() {
     }
     else {
     const hypotenuse = Math.sqrt(sum).toFixed(2);
-    textOutput.innerText = "The length of hypotenuse is " + hypotenuse;
+    textOutput.innerText = "The length of hypotenuse is " + hypotenuse+" sq. cm.";
     };
 };
